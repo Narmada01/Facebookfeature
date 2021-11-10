@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class searchPOM {
+    String str= new String();
     public searchPOM(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
@@ -26,7 +27,7 @@ public class searchPOM {
     }
     public void checkTitleName(String expectedName)
     {
-        Assert.assertTrue(titleName.getText().contains(expectedName));
+        Assert.assertTrue(titleName.getText().contains(expectedName) );
     }
 
 }
