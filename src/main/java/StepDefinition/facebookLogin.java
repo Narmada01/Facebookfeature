@@ -18,7 +18,7 @@ public class facebookLogin extends CommonFunction {
         String url =readProperty();
         driver.get(url);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("button[title*='Allow All Cookies']")).click();
     }
     @When("Provide Registered Email or phone number")

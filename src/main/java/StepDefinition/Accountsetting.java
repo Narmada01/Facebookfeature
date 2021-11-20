@@ -17,7 +17,7 @@ public class Accountsetting extends CommonFunction {
         login.provide_registered_email_or_phone_number();
         login.provide_valid_password();
         login.click_login_button();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
         account.setIcon();
     }
     @When("Choose Display and Accessability")
